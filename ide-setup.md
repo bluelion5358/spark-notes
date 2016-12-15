@@ -44,8 +44,7 @@ $ git checkout -b pin-tag-202
 如果想要push自己的commits，也可以fork到自己的Github账号下，再拉取到本地，可以参考我之前的文章：[Reading Spark Souce Code in IntelliJ IDEA](https://linbojin.github.io/2016/01/09/Reading-Spark-Souce-Code-in-IntelliJ-IDEA/)
 
 ### 编译Spark项目
-参考[官方文档](https://github.com/apache/spark#building-spark)，编译很简单，这里使用4个线程，跳过tests，以此加速编译。这个编译会产生一些必要的源代码，如Catalyst项目下的，所以是必要的一步：
-
+参考[官方文档](https://github.com/apache/spark#building-spark)，编译很简单，这里使用4个线程，跳过tests，以此加速编译。这个编译会产生一些必要的源代码，如Catalyst项目下的，所以是必要的一步：在此之前 需要将Git下面的bin路径加入系统Path中：C:\Program Files (x86)\Git\bin
 ```bash
 $ mvn -T 4 -DskipTests clean package
 # 编译完成后，测试一下
