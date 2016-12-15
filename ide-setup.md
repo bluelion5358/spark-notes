@@ -29,8 +29,6 @@ tags: spark-notes
 * git 2.10.2
 * IntelliJ IDEA 2016.3 (scala plugin) 
 
-本人使用macOS 10.12，所有笔记都基于这个系统，但是其他系统也可以很容易找到对应的解决方案，比如IDE的快捷键。
-
 ## 源码获取与编译
 
 ### 从Github上获取Spark源码
@@ -43,7 +41,6 @@ $ git tag
 $ git checkout v2.0.2 
 $ git checkout -b pin-tag-202
 ```
-
 如果想要push自己的commits，也可以fork到自己的Github账号下，再拉取到本地，可以参考我之前的文章：[Reading Spark Souce Code in IntelliJ IDEA](https://linbojin.github.io/2016/01/09/Reading-Spark-Souce-Code-in-IntelliJ-IDEA/)
 
 ### 编译Spark项目
