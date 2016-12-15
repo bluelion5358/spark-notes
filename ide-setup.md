@@ -37,7 +37,7 @@ tags: spark-notes
 可以直接从Spark官方Github仓库拉取。本系列笔记基于**Spark 2.0.2**这个版本，所以先checkout这个tag，再进行之后的步骤：
 
 ```bash
-$ git clone git@github.com:apache/spark.git
+$ git clone git://github.com/apache/spark.git
 $ cd spark
 $ git tag
 $ git checkout v2.0.2 
@@ -50,7 +50,7 @@ $ git checkout -b pin-tag-202
 参考[官方文档](https://github.com/apache/spark#building-spark)，编译很简单，这里使用4个线程，跳过tests，以此加速编译。这个编译会产生一些必要的源代码，如Catalyst项目下的，所以是必要的一步：
 
 ```bash
-$ build/mvn -T 4 -DskipTests clean package
+$ mvn -T 4 -DskipTests clean package
 # 编译完成后，测试一下
 $ ./bin/spark-shell
 ```
